@@ -1,9 +1,11 @@
 "use client";
 
+import ProtectedRoute from '../../protected/ProtectedRoute';
 import React from "react";
 
 const MainPage: React.FC = () => {
   return (
+    <ProtectedRoute>
     <main className="min-h-screen bg-gray-50">
 
       {/* Hero Section */}
@@ -53,6 +55,7 @@ const MainPage: React.FC = () => {
         </div>
       </section>
     </main>
+    </ProtectedRoute>
   );
 };
 
